@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"
+	android:layout_marginBottom="10dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:paddingTop="10dp"
+		android:text="@string/telephoneRuleTypeLabel" />
+
+	<Spinner
+	    android:id="@+id/ruleTypeSelector"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:spinnerMode="dialog" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:paddingTop="10dp"
+		android:text="@string/telephoneNumberLabel" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:id="@+id/telephoneStart"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/phoneNumberHint"
+			android:layout_toLeftOf="@+id/select_contact"
+			android:layout_alignParentLeft="true"
+			android:inputType="phone" />
+
+		<ImageButton
+			android:id="@+id/select_contact"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:contentDescription="@string/selectContactPhone"
+			android:scaleType="fitXY"
+			android:adjustViewBounds="true"
+			android:src="@drawable/address_book" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/telephoneEndLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:layout_marginTop="10dp">
+
+		<EditText
+			android:id="@+id/telephoneEnd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:hint="@string/phoneNumberHintRangeEnd"
+			android:layout_toLeftOf="@+id/select_end_contact"
+			android:layout_alignParentLeft="true"
+			android:inputType="phone" />
+
+		<ImageButton
+			android:id="@+id/select_end_contact"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:contentDescription="@string/selectContactPhone"
+			android:scaleType="fitXY"
+			android:adjustViewBounds="true"
+			android:src="@drawable/address_book" />
+
+	</RelativeLayout>
+
+</LinearLayout>

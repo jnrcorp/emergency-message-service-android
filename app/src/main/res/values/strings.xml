@@ -1,0 +1,226 @@
+<resources>
+
+    <string name="app_name">SMS Alert</string>
+
+    <!-- Main Screen Activity -->
+    <string name="welcome">Welcome to SMS Alert!</string>
+    <string name="description">This app will intercept incoming text messages and apply the rules you specify. The purpose is to allow you to choose how you receive alerts from specific people or organizations.</string>
+    <string name="currentList">Here are your current message interceptions (tap to edit):</string>
+    <string name="noRulesToDisplay">You have not created any rules, yet!</string>
+    <string name="noRulesToDisplay2">Click the button above to start.</string>
+    <string name="interceptionEnabled">Message Intercept</string>
+    <string name="add_intercept">Add Alert Rule</string>
+
+    <!-- Alert Activity -->
+    <string name="stopAlert">Stop Audio</string>
+    <string name="dismissAlert">Dismiss Alert</string>
+
+    <!-- Add Alert Activity -->
+    <string name="ruleFilterLabel">Filter Method</string>
+    <string name="ruleFilterHint">(multiple allowed, tap row to edit/delete)</string>
+    <string name="ruleFilterEmpty">Please add a filter.</string>
+    <string name="add_phone">Add Phone #</string>
+    <string name="add_email">Add Email</string>
+    <string name="audibleAlertLabel">Audible Alerts</string>
+    <string name="nonAudibleAlertLabel">Non-Audible Alerts</string>
+    <string name="alertTypeLabel">Select the audible alert you would like this rule to follow:</string>
+    <string name="volumeLabel">This alert will play at the volume below:</string>
+    <string name="vibrateLabel">How would you like matching messages to vibrate?</string>
+    <string name="turnScreenOnLabel">When this rule is executed would you like the screen to turn on automatically?</string>
+    <string name="enabledLabel">You can disable this rule if you want to save it for later.</string>
+    <string name="ringToneHint">Tap to Select a Ringtone</string>
+    <string name="noRingtoneSelected">Use Default Notification Ringtone</string>
+    <string name="ringtoneSelected">Ringtone: %1$s</string>
+    <string name="turnScreenOn">Turn Screen On</string>
+    <string name="flashOnLabel">Would like the back flash light to strobe?</string>
+    <string name="flashOn">Flash Light Strobe</string>
+    <string name="timeFrameLabel">Alert Scheduling</string>
+    <string name="timeFrameHint">(multiple allowed, tap row to edit/delete)</string>
+    <string name="timeFrameHoursDisplay">Between %1$s and %2$s</string>
+    <string name="timeFrameHoursDaysDisplay">[%1$s]</string>
+    <string name="timeFrameSchedule">This rule is in effect 24 / 7.</string>
+    <string name="addTimeSchedule">Add Day / Time Schedule</string>
+    <string name="enabled">Alert Enabled</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+
+    <!-- Filter Phone Dialog -->
+    <string name="add_filter">Add Filter</string>
+    <string name="edit_filter">Edit Filter</string>
+    <string name="telephoneRuleTypeLabel">Choose how you would like to filter telephone numbers on incoming text messages?</string>
+    <string name="telephoneNumberLabel">Enter the digits of the telephone number you are trying to filter based on the rule type selected above.\nNOTE: All phone numbers passed to this application start with \'+\' followed by the country code. If Using \'start with\' you must account for this in your number fragment.</string>
+    <string name="phoneNumberHint">+12125551234</string>
+    <string name="selectContactPhone">Select Phone</string>
+    <string name="phoneNumberHintRangeStart">+12125551234 (Range Start)</string>
+    <string name="phoneNumberHintRangeEnd">+12125551234 (Range End)</string>
+
+    <!-- Filter Email Dialog -->
+	<string name="emailRuleTypeLabel">Email Addresses are always filtered using an exact match.</string>
+	<string name="emailLabel">Enter the email address you wish to include in notifications.</string>
+	<string name="selectContactEmail">Select Email</string>
+	<string name="emailHint">joe.schmoe@schmoe.com</string>
+
+    <!-- Filter Delete Confirmation -->
+    <string name="confirm_delete_rule_filter">Are you sure you want to delete this filter?\n %1$s: %2$s\n%3$s</string>
+    <string name="filter_actions_delete">Delete Filter</string>
+    <string name="filter_actions_edit">Edit Filter</string>
+    <string name="confirm_delete_rule_filter_title">Delete Filter</string>
+
+    <!-- Alert Scheduling Action Menu -->
+    <string name="choose_action">What would you like to do?</string>
+    <string name="schedule_actions_delete">Delete Time Frame</string>
+    <string name="schedule_actions_edit">Edit Time Frame</string>
+    
+    <!-- Alert Schedule Delete Confirmation -->
+    <string name="confirm_delete_rule_time_title">Delete Time Frame</string>
+    <string name="confirm_delete_rule_time">Are you sure you want to delete this rule time?\n %1$s to %2$s\n %3$s.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Alert Scheduling Dialog -->
+    <string name="edit_schedule">Edit Schedule Rule</string>
+    <string name="add_schedule">Add Schedule Rule</string>
+    <string name="schedule_time_start">This rule will be in affect starting:</string>
+    <string name="schedule_time_end">This rule will be in affect ending:</string>
+    <string name="schedule_days_of_week">Select the days of the week:</string>
+
+    <!-- Days of the Weekd -->
+    <string name="sunday_short">S</string>
+    <string name="monday_short">M</string>
+    <string name="tuesday_short">T</string>
+    <string name="wednesday_short">W</string>
+    <string name="thursday_short">T</string>
+    <string name="friday_short">F</string>
+    <string name="saturday_short">S</string>
+    <string name="sunday_medium">Sun</string>
+    <string name="monday_medium">Mon</string>
+    <string name="tuesday_medium">Tues</string>
+    <string name="wednesday_medium">Wed</string>
+    <string name="thursday_medium">Thurs</string>
+    <string name="friday_medium">Fri</string>
+    <string name="saturday_medium">Sat</string>
+    <string name="sunday_long">Sunday</string>
+    <string name="monday_long">Monday</string>
+    <string name="tuesday_long">Tuesday</string>
+    <string name="wednesday_long">Wednesday</string>
+    <string name="thursday_long">Thursday</string>
+    <string name="friday_long">Friday</string>
+    <string name="saturday_long">Saturday</string>
+
+    <!-- Filter Types -->
+    <string name="filter_phone_label">Phone Number</string>
+    <string name="filter_phone_description">Filter by phone number. Choose from handful of different methods.</string>
+    <string name="filter_email_label">Email</string>
+    <string name="filter_email_description">Filter by matching email address</string>
+
+    <!-- Rule Types -->
+    <string name="contain_singular">Contain</string>
+    <string name="contain_plural">Contains</string>
+    <string name="contain_detail">This rule applies to phone numbers that contain the entered value.\n\nNOTE: If you know the majority of the number is stable, this is a good one to use to ensure all message from a particular exchange or text message center are captured.</string>
+    <string name="end_with_singular">End With</string>
+    <string name="end_with_plural">Ends With</string>
+    <string name="end_with_detail">This rule applies to phone numbers that end with the entered value.\n\nNOTE: This is good if you know the entire number but aren\'t familiar with the correct format.</string>
+    <string name="start_with_singular">Start With</string>
+    <string name="start_with_plural">Starts With</string>
+    <string name="start_with_detail">This rule applies to phone numbers that start with the entered value.\n\nNOTE: Most phone numbers start with a \'+\' (plus sign). If you are unsure how to enter this, use \'End With\' instead.</string>
+    <string name="equal_singular">Equal</string>
+    <string name="equal_plural">Equals</string>
+    <string name="equal_with_detail">This rule applies to phone numbers that match the entered value exactly.\n\nNOTE: This is good if you know the entire number and are familiar with the correct format that is used when the text message is received. It is a good idea to test this one before relying on it.</string>
+    <string name="of_length_singular">Are Of Length</string>
+    <string name="of_length_plural">Are of Length</string>
+    <string name="of_length_detail">This rule applies to phone numbers of the length entered.\n\nNOTE: This is good to use if you wish to capture all numbers of a certain type. Cell phones in the US are always 11 (including the \'+\') in front.</string>
+    <string name="range_singular">Range</string>
+    <string name="range_plural">Range</string>
+    <string name="range_detail">This rule applies to phone numbers that are within the range of numbers entered.\n\nNOTE: This will strip off the \'+\' in front and look for numbers between the 2 entered. Remember to enter the country code.</string>
+
+    <!-- Alert Types -->
+    <string name="ring_continuous_label">Ring Continuously</string>
+    <string name="ring_continuous_detail">Play the notification until you dismiss it. This will not read the message aloud.</string>
+    <string name="ring_once_label">Ring Once</string>
+    <string name="ring_once_detail">Play the notification once, like a normal text message application would do. This will not read the message aloud.</string>
+    <string name="ring_once_read_aloud_once_label">Ring Once and Read Aloud Once</string>
+    <string name="ring_once_read_aloud_once_detail">Play the notification once and read aloud once.</string>
+    <string name="ring_once_read_aloud_continuous_label">Ring Once then Read Aloud Continuously</string>
+    <string name="ring_once_read_aloud_continuous_detail">Play the notification once, then read the message aloud until you dismiss the notification.</string>
+    <string name="ring_once_read_aloud_twice_repeat_label">Ring Once then Read Aloud Twice, Repeat</string>
+    <string name="ring_once_read_aloud_twice_repeat_detail">Please the notification once, then read the message aloud twice and repeat the entire combination.</string>
+    <string name="read_aloud_once_label">Read Aloud Once [No Ring]</string>
+    <string name="read_aloud_once_detail">Do not play a notification sound, just read the message aloud once.</string>
+    <string name="read_aloud_continuous_label">Read Aloud Continuous [No Ring]</string>
+    <string name="read_aloud_continuous_detail">Do not play a notification sound, just read the message aloud until you dismiss the notification.</string>
+
+    <!-- Vibrate Types -->
+    <string name="vibrate_off_label">Do not Vibrate</string>
+    <string name="vibrate_off_detail">The phone will not vibrate.</string>
+    <string name="vibrate_once_label">Vibrate Once</string>
+    <string name="vibrate_once_detail">The phone will vibrate for 3 seconds.</string>
+    <string name="vibrate_continuous_label">Vibrate Continuously</string>
+    <string name="vibrate_continuous_detail">The phone will vibrate for 3 seconds, then not vibrate for 3 seconds, then repeat.</string>
+
+    <!-- Rule Schedule Validator Error Messages -->
+    <string name="timesAreEqual">The times selected are equal. They must span some amount of time.</string>
+    <string name="noDaysSelected">You must select at least one (1) day for this schedule to be active.</string>
+    <string name="ruleTimeValidationError">Rule Schedule Validation Error</string>
+
+    <!-- Rule Validator Error Messages -->
+    <string name="filtersRequired">You must add at least one filter.</string>
+
+    <!-- Rule Filter Validator Error Messages -->
+    <string name="ruleValidationError">Rule Validation Error</string>
+    <string name="phoneIsBlank">The phone number filter field cannot be blank. Please enter a number based on the selected rule.</string>
+    <string name="mustStartWithPlusSign">When using the \'Starts With\' rule type, the number filtered needs to start with a \'+\' because phone numbers are received in a normalized format. You can use the contact picker to the right of the input and then remove characters that fit your rule.</string>
+    <string name="ofLengthMustBeNumber">The entered value should be a number that is the length of a telephone number. We are expecting it be between 1 and 20.</string>
+    <string name="lengthToLong">The value entered is greater than 20. It is unlikely a phone number will have more than 20 characters. Please correct the input.</string>
+    <string name="lowerNumberFirst">The lower telephone number must be in the first entry box. Please swap them.</string>
+    <string name="funkyCharacters">We found some funky characters in one of your range inputs. Please make sure you have only \'+\' and numbers. If you have anything else and you believe it should be valid, please email me: webmaster@3dx2.com.</string>
+    <string name="emailRequired">Please enter an email address</string>
+
+    <!-- Rule List Adapter Display -->
+    <string name="rangeRuleDescription">from %1$s to %2$s</string>
+    <string name="ruleDetails">Phone Numbers that %1$s %2$s</string>
+    <string name="volumeLevel">Volume</string>
+    <string name="vibrateType">Vibrate: %1$s</string>
+    <string name="screenWillStayOff">Screen will be left alone</string>
+    <string name="screenWillTurnOn">Screen will turn ON</string>
+    <string name="flashLightOn">Camera flashlight will blink</string>
+    <string name="flashLightOff">Camera flashlight will stay off</string>
+    <string name="messageFrom">From: %1$s</string>
+    <string name="scheudle_24_7">24/7</string>
+
+    <!-- Menu Strings -->
+    <string name="help">Help</string>
+    <string name="recent_changes">Recent Changes</string>
+    <string name="about">About</string>
+
+    <!-- User Actions -->
+    <string name="version_upgrade_message">
+        As changes are made to the application, details will appear here (if I remember to do it).
+        \n\nEMS 0.6\n-------------------
+        \nChanged the name
+        \n\nEMS 0.5\n-------------------
+        \nAllow multiple phone number filters per rule
+        \n\nEMS 0.4\n-------------------
+        \nImproved localization support
+        \nImproved aesthetics on rule add/edit and rule list screens
+        \nChanged volume display to a progress bar 
+        \n\nEMS 0.3\n-------------------
+        \nMaking sure that the volume does not change when using a wired or bluetooth headset.
+        \n\nEMS 0.2\n-------------------
+        \nEnsure alerts do not restart on orientation change
+    </string>
+    <string name="ems_help_1">Thank you for using SMS Alert! This application is designed to intercept text messages that are important to you and alert you over their arrival. The idea came from a volunteer firefighter who wanted to ensure he was always aware messages with high priority.</string>
+    <string name="ems_help_2">Please email comments, questions, and enhancement requests to webmaster@3dx2.com</string>
+    <string name="ems_help_3">The way this is achieved is by creating rules that will match specific telephone numbers or subsets of telephone numbers. Most times emergency messages come from a central office that owns a group of sms from addresses.</string>
+    <string name="ems_help_4">Each rule defines how a message is matched and definitions on how it should be brought to your attention.</string>
+    <string name="ems_help_5">To create your first rule, click the \'Add Rule\' button on the main page and follow the on screen instructions. These are very important and following them properly should allow you to intercept messages you care about.</string>
+    <string name="ems_help_6">Rules can be deleted by editing them and clicking the \'Delete\' button on the bottom of the screen.</string>
+    <string name="ems_help_7">Rules can be globally disabled by unchecking the appropriate box on the main screen. Specific rule enabled settings are retained when you choose to turn the message interception back on.</string>
+    <string name="ems_help_title">SMS Alert Help</string>
+    <string name="about_message">You are running version %1$s of SMS Alert.  This is created by Joshua Ross.</string>
+
+    <!-- Alert Dialog Util -->
+    <string name="ok">Okay</string>
+    <string name="icon">Icon</string>
+
+</resources>

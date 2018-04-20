@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+	    android:id="@+id/alertLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<Switch
+			android:id="@+id/interception_enabled"
+			android:text="@string/interceptionEnabled"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp" />
+
+		<TextView
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dp"
+			android:text="@string/description"
+			android:autoLink="all"
+			android:linksClickable="true" />
+
+		<Button
+			android:id="@+id/add_rule"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+			android:text="@string/add_intercept" 
+			android:textSize="20sp" />
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="4dp"
+		android:text="@string/currentList"
+		android:autoLink="all"
+		android:linksClickable="true" />
+
+	<ListView
+	    android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/welcome" />
+
+</LinearLayout>

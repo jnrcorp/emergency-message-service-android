@@ -1,0 +1,57 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.jnrcorp.ems"
+	android:versionCode="6"
+	android:versionName="0.6"
+	android:installLocation="auto">
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_MMS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="20" />
+
+	<supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name">
+
+		<activity android:name=".activity.AlertManagementActivity" android:label="@string/app_name" android:configChanges="locale">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.AddRuleActivity" android:label="@string/app_name" android:configChanges="locale" android:windowSoftInputMode="stateHidden" />
+		<activity android:name=".activity.AlertActivity" android:label="@string/app_name" android:configChanges="locale">
+			<intent-filter>
+<!-- 			    <action android:name="android.intent.action.MAIN" /> -->
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<receiver android:name="com.jnrcorp.ems.messagereceiver.EMSMessageReceiver" android:exported="true">
+			<intent-filter android:priority="999999">
+				<action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+			</intent-filter>
+		</receiver>
+
+	</application>
+
+</manifest>

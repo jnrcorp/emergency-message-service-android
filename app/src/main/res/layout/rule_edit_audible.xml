@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom|center_horizontal"
+		android:paddingTop="10dp"
+		android:textSize="20sp"
+		android:text="@string/audibleAlertLabel" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:paddingTop="10dp"
+		android:text="@string/alertTypeLabel" />
+
+	<Spinner
+	    android:id="@+id/alertTypeSelector"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<TextView
+		android:id="@+id/ringTone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:text="@string/ringToneHint"
+		android:clickable="true" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:paddingTop="10dp"
+		android:text="@string/volumeLabel" />
+
+	<SeekBar
+		android:id="@+id/volume"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dp" />
+
+</LinearLayout>
